@@ -422,7 +422,7 @@ function Pool(maxSize) {
 				// Initalize the object
 				var bullet = new Bullet("bullet");
 				bullet.init(0,0, imageRepository.bullet.width,
-										imageRepository.bullet.height);
+				imageRepository.bullet.height);
 				bullet.collidableWith = "enemy";
 				bullet.type = "bullet";
 				pool[i] = bullet;
@@ -750,7 +750,7 @@ function Game() {
 			this.backgroundAudio.volume = .25;
 			this.backgroundAudio.load();
 
-			this.gameOverAudio = new Audio("sounds/s1.wav");
+			this.gameOverAudio = new Audio("s1.wav");
 			this.gameOverAudio.loop = true;
 			this.gameOverAudio.volume = .25;
 			this.gameOverAudio.load();
@@ -849,7 +849,7 @@ function SoundPool(maxSize) {
 		if (object == "laser") {
 			for (var i = 0; i < size; i++) {
 				// Initalize the object
-				laser = new Audio("sounds/s3.wav");
+				laser = new Audio("s3.wav");
 				laser.volume = .12;
 				laser.load();
 				pool[i] = laser;
@@ -857,7 +857,7 @@ function SoundPool(maxSize) {
 		}
 		else if (object == "explosion") {
 			for (var i = 0; i < size; i++) {
-				var explosion = new Audio("sounds/s4.wav");
+				var explosion = new Audio("s4.wav");
 				explosion.volume = .1;
 				explosion.load();
 				pool[i] = explosion;
